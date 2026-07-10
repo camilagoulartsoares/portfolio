@@ -54,24 +54,31 @@ describe('App.vue', () => {
 
     expect(cards).toHaveLength(projects.length)
     expect(cards[0]?.attributes('href')).toBe(
-      'https://github.com/camilagoulartsoares/ivc-frontend',
+      'https://camilagoulartsoares.github.io/helpdog/',
     )
     expect(cards[1]?.attributes('href')).toBe(
-      'https://github.com/camilagoulartsoares/ivc-backend',
+      'https://github.com/camilagoulartsoares/ivc-frontend',
     )
     expect(cards[2]?.attributes('href')).toBe(
+      'https://github.com/camilagoulartsoares/ivc-backend',
+    )
+    expect(cards[3]?.attributes('href')).toBe(
       'https://github.com/camilagoulartsoares/inchurch',
     )
   })
 
-  it('exibe capas do InChurch e da Vitrine de Startups', () => {
+  it('exibe capas do HelpDog, InChurch e da Vitrine de Startups', () => {
     const wrapper = mount(App)
     const images = wrapper.findAll('.project-thumb img')
 
-    expect(images).toHaveLength(2)
+    expect(images).toHaveLength(3)
     const alts = images.map((img) => img.attributes('alt') ?? '')
+    expect(alts.some((alt) => alt.includes('HelpDog'))).toBe(true)
     expect(alts.some((alt) => alt.includes('InChurch'))).toBe(true)
     expect(alts.some((alt) => alt.includes('Vitrine de Startups'))).toBe(true)
+    expect(
+      images.some((img) => (img.attributes('src') ?? '').includes('helpdog.png')),
+    ).toBe(true)
     expect(
       images.some((img) => (img.attributes('src') ?? '').includes('inchurch.png')),
     ).toBe(true)

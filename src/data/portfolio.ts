@@ -120,6 +120,14 @@ export function createProjects(baseUrl = '/'): Project[] {
 
   return [
     {
+      title: 'HelpDog',
+      description:
+        'Landing page responsiva de campanha solidária para alimentar cães de rua, com hero animado, seções sobre e vitrine de produtos. Feita com Vue 3, TypeScript e Vite, publicada no GitHub Pages.',
+      href: 'https://camilagoulartsoares.github.io/helpdog/',
+      tags: ['Vue 3', 'TypeScript', 'Vite', 'CSS', 'GitHub Pages'],
+      image: `${normalizedBase}projects/helpdog.png`,
+    },
+    {
       title: 'Vitrine de Startups',
       description:
         'Plataforma interativa estilo vitrine com filtros dinâmicos, favoritos, paginação, CRUD autenticado e chatbot integrado ao backend. Desenvolvida com Next.js, React e testes em Jest.',
