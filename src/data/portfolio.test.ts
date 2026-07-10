@@ -39,22 +39,28 @@ describe('portfolio data', () => {
   it('cria projetos com links corretos e capa do InChurch', () => {
     const projects = createProjects('/portfolio/')
 
-    expect(projects).toHaveLength(2)
+    expect(projects).toHaveLength(3)
     expect(projects[0]?.title).toBe('Vitrine de Startups')
     expect(projects[0]?.href).toBe(
       'https://github.com/camilagoulartsoares/ivc-frontend',
     )
     expect(projects[0]?.image).toBeNull()
 
-    expect(projects[1]?.title).toBe('InChurch')
+    expect(projects[1]?.title).toBe('Investidores.vc — Backend')
     expect(projects[1]?.href).toBe(
+      'https://github.com/camilagoulartsoares/ivc-backend',
+    )
+    expect(projects[1]?.tags).toContain('NestJS')
+
+    expect(projects[2]?.title).toBe('InChurch')
+    expect(projects[2]?.href).toBe(
       'https://github.com/camilagoulartsoares/inchurch',
     )
-    expect(projects[1]?.image).toBe('/portfolio/projects/inchurch.png')
+    expect(projects[2]?.image).toBe('/portfolio/projects/inchurch.png')
   })
 
   it('normaliza baseUrl sem barra final', () => {
     const projects = createProjects('/portfolio')
-    expect(projects[1]?.image).toBe('/portfolio/projects/inchurch.png')
+    expect(projects[2]?.image).toBe('/portfolio/projects/inchurch.png')
   })
 })

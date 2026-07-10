@@ -128,6 +128,14 @@ export function createProjects(baseUrl = '/'): Project[] {
       image: null,
     },
     {
+      title: 'Investidores.vc — Backend',
+      description:
+        'API RESTful NestJS para autenticação JWT, CRUD de startups, chatbot e cron jobs, com Prisma ORM (SQLite/PostgreSQL). Em produção na Railway.',
+      href: 'https://github.com/camilagoulartsoares/ivc-backend',
+      tags: ['NestJS', 'Prisma', 'JWT', 'PostgreSQL', 'TypeScript'],
+      image: null,
+    },
+    {
       title: 'InChurch',
       description:
         'E-commerce com listagem paginada, filtros, carrinho, login, CRUD de produtos e páginas de detalhe/usuário, consumindo a API DummyJSON. Feito com Angular, CSS e TypeScript.',

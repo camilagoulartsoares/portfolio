@@ -57,6 +57,9 @@ describe('App.vue', () => {
       'https://github.com/camilagoulartsoares/ivc-frontend',
     )
     expect(cards[1]?.attributes('href')).toBe(
+      'https://github.com/camilagoulartsoares/ivc-backend',
+    )
+    expect(cards[2]?.attributes('href')).toBe(
       'https://github.com/camilagoulartsoares/inchurch',
     )
   })
