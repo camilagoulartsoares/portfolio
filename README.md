@@ -47,9 +47,13 @@ npm run dev
 portfolio/
 ├── public/
 ├── src/
-│   ├── App.vue      # Página do portfólio
-│   ├── App.css      # Estilos
-│   ├── index.css    # Base
+│   ├── App.vue
+│   ├── App.css
+│   ├── App.test.ts
+│   ├── data/
+│   │   ├── portfolio.ts
+│   │   └── portfolio.test.ts
+│   ├── index.css
 │   └── main.ts
 ├── .github/workflows/deploy.yml
 ├── index.html
