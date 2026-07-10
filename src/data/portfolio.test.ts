@@ -44,7 +44,7 @@ describe('portfolio data', () => {
     expect(projects[0]?.href).toBe(
       'https://github.com/camilagoulartsoares/ivc-frontend',
     )
-    expect(projects[0]?.image).toBeNull()
+    expect(projects[0]?.image).toBe('/portfolio/projects/ivc-frontend.png')
 
     expect(projects[1]?.title).toBe('Investidores.vc — Backend')
     expect(projects[1]?.href).toBe(

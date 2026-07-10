@@ -125,7 +125,7 @@ export function createProjects(baseUrl = '/'): Project[] {
         'Plataforma interativa estilo vitrine com filtros dinâmicos, favoritos, paginação, CRUD autenticado e chatbot integrado ao backend. Desenvolvida com Next.js, React e testes em Jest.',
       href: 'https://github.com/camilagoulartsoares/ivc-frontend',
       tags: ['Next.js', 'React', 'TypeScript', 'Jest', 'CSS Modules'],
-      image: null,
+      image: `${normalizedBase}projects/ivc-frontend.png`,
     },
     {
       title: 'Investidores.vc — Backend',

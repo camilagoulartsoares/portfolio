@@ -64,13 +64,22 @@ describe('App.vue', () => {
     )
   })
 
-  it('exibe capa apenas no projeto InChurch', () => {
+  it('exibe capas do InChurch e da Vitrine de Startups', () => {
     const wrapper = mount(App)
     const images = wrapper.findAll('.project-thumb img')
 
-    expect(images).toHaveLength(1)
-    expect(images[0]?.attributes('alt')).toContain('InChurch')
-    expect(images[0]?.attributes('src')).toContain('inchurch.png')
+    expect(images).toHaveLength(2)
+    const alts = images.map((img) => img.attributes('alt') ?? '')
+    expect(alts.some((alt) => alt.includes('InChurch'))).toBe(true)
+    expect(alts.some((alt) => alt.includes('Vitrine de Startups'))).toBe(true)
+    expect(
+      images.some((img) => (img.attributes('src') ?? '').includes('inchurch.png')),
+    ).toBe(true)
+    expect(
+      images.some((img) =>
+        (img.attributes('src') ?? '').includes('ivc-frontend.png'),
+      ),
+    ).toBe(true)
   })
 
   it('atualiza spotlight no mousemove', async () => {
