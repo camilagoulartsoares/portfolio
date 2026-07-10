@@ -105,6 +105,7 @@ const projects = [
       'Plataforma interativa estilo vitrine com filtros dinâmicos, favoritos, paginação, CRUD autenticado e chatbot integrado ao backend. Desenvolvida com Next.js, React e testes em Jest.',
     href: 'https://github.com/camilagoulartsoares/ivc-frontend',
     tags: ['Next.js', 'React', 'TypeScript', 'Jest', 'CSS Modules'],
+    image: null as string | null,
   },
   {
     title: 'InChurch',
@@ -112,6 +113,7 @@ const projects = [
       'E-commerce com listagem paginada, filtros, carrinho, login, CRUD de produtos e páginas de detalhe/usuário, consumindo a API DummyJSON. Feito com Angular, CSS e TypeScript.',
     href: 'https://github.com/camilagoulartsoares/inchurch',
     tags: ['Angular', 'TypeScript', 'CSS', 'JavaScript'],
+    image: `${import.meta.env.BASE_URL}projects/inchurch.png`,
   },
 ]
 
@@ -298,7 +300,13 @@ onUnmounted(() => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <div class="project-thumb" aria-hidden="true" />
+                <div class="project-thumb" aria-hidden="true">
+                  <img
+                    v-if="project.image"
+                    :src="project.image"
+                    :alt="`Capa do projeto ${project.title}`"
+                  />
+                </div>
                 <div class="project-body">
                   <h3>
                     <span>{{ project.title }}</span>
