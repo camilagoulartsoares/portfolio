@@ -36,6 +36,9 @@ npm run dev
 | --- | --- |
 | `npm run dev` | Servidor local |
 | `npm run build` | Typecheck (`vue-tsc`) + build em `dist/` |
+| `npm run test` | Roda a suíte Vitest |
+| `npm run test:watch` | Vitest em modo watch |
+| `npm run test:coverage` | Cobertura de testes |
 | `npm run preview` | Preview do build |
 | `npm run lint` | Oxlint |
 
