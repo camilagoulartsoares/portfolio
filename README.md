@@ -1,10 +1,9 @@
 # Camila Goulart Soares — Portfólio
 
-Portfólio pessoal da **Camila Goulart Soares**, desenvolvedora front-end.  
-Projeto independente (não relacionado ao portfólio da Caroline).
+Portfólio pessoal da **Camila Goulart Soares**, desenvolvedora front-end.
 
-**Repositório:** este projeto  
-**Deploy previsto:** `https://camilagoulartsoares.github.io/portfolio/`
+**Repo:** [camilagoulartsoares/portfolio](https://github.com/camilagoulartsoares/portfolio)  
+**Live (após Pages):** [camilagoulartsoares.github.io/portfolio](https://camilagoulartsoares.github.io/portfolio/)
 
 ---
 
@@ -18,15 +17,15 @@ Projeto independente (não relacionado ao portfólio da Caroline).
 | Lint | [Oxlint](https://oxc.rs/) | Lint leve e rápido |
 | Deploy | GitHub Pages + Actions | CI/CD automático no `main` |
 
-Sem framework de UI: CSS próprio, tipografia Instrument Serif + Syne.
+CSS próprio, tipografia Instrument Serif + Syne — sem framework de UI.
 
 ---
 
 ## Desenvolvimento
 
 ```bash
-git clone git@github.com:camilagoulartsoares/camila-portfolio.git
-cd camila-portfolio
+git clone git@github.com:camilagoulartsoares/portfolio.git
+cd portfolio
 npm install
 npm run dev
 ```
@@ -45,7 +44,7 @@ npm run dev
 ## Estrutura
 
 ```text
-camila-portfolio/
+portfolio/
 ├── public/
 ├── src/
 │   ├── App.tsx      # Página do portfólio
@@ -61,10 +60,9 @@ camila-portfolio/
 
 ## Deploy
 
-1. Crie o repositório `camila-portfolio` no GitHub (se ainda não existir)
-2. Faça push da branch `main`
-3. Em **Settings → Pages**, escolha **GitHub Actions**
-4. O workflow publica a cada push em `main`
+1. Push na branch `main`
+2. Em **Settings → Pages**, escolha **GitHub Actions**
+3. O workflow publica a cada push
 
 ---
 
