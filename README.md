@@ -11,13 +11,13 @@ Portfólio pessoal da **Camila Goulart Soares**, desenvolvedora front-end.
 
 | Camada | Tecnologia | Por quê |
 | --- | --- | --- |
-| UI | [React 19](https://react.dev/) | Padrão atual do ecossistema |
+| UI | [Vue 3](https://vuejs.org/) | Composition API + SFCs |
 | Linguagem | [TypeScript](https://www.typescriptlang.org/) | Tipagem e manutenção |
 | Build | [Vite 8](https://vite.dev/) | Dev server rápido + build moderno |
 | Lint | [Oxlint](https://oxc.rs/) | Lint leve e rápido |
 | Deploy | GitHub Pages + Actions | CI/CD automático no `main` |
 
-CSS próprio, tipografia Instrument Serif + Syne — sem framework de UI.
+CSS próprio, tipografia Inter — layout sticky sidebar no estilo de portfólios de engenharia front-end.
 
 ---
 
@@ -35,7 +35,7 @@ npm run dev
 | Comando | Função |
 | --- | --- |
 | `npm run dev` | Servidor local |
-| `npm run build` | Typecheck + build em `dist/` |
+| `npm run build` | Typecheck (`vue-tsc`) + build em `dist/` |
 | `npm run preview` | Preview do build |
 | `npm run lint` | Oxlint |
 
@@ -47,10 +47,10 @@ npm run dev
 portfolio/
 ├── public/
 ├── src/
-│   ├── App.tsx      # Página do portfólio
+│   ├── App.vue      # Página do portfólio
 │   ├── App.css      # Estilos
 │   ├── index.css    # Base
-│   └── main.tsx
+│   └── main.ts
 ├── .github/workflows/deploy.yml
 ├── index.html
 └── vite.config.ts   # base: /portfolio/
@@ -68,9 +68,9 @@ portfolio/
 
 ## Personalizar
 
-- Textos e projetos: `src/App.tsx`
+- Textos e projetos: `src/App.vue`
 - Visual: `src/App.css`
-- Contato / links: seção `#contato` em `App.tsx`
+- Contato / links: seção social e `#projects` em `App.vue`
 
 ---
 
