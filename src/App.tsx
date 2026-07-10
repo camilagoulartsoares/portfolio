@@ -94,32 +94,18 @@ const experiences = [
 
 const projects = [
   {
-    title: 'DealSafe — Árvores de decisão',
+    title: 'Vitrine de Startups',
     description:
-      'Módulo no-code de criação e execução de árvores de decisão, com permissões granulares, rastreabilidade de execuções e fluxos multi-etapa de validação.',
-    href: 'https://github.com/camilagoulartsoares',
-    tags: ['React', 'TypeScript', 'No-code'],
+      'Plataforma interativa estilo vitrine com filtros dinâmicos, favoritos, paginação, CRUD autenticado e chatbot integrado ao backend. Desenvolvida com Next.js, React e testes em Jest.',
+    href: 'https://github.com/camilagoulartsoares/ivc-frontend',
+    tags: ['Next.js', 'React', 'TypeScript', 'Jest', 'CSS Modules'],
   },
   {
-    title: 'DealBoard',
+    title: 'InChurch',
     description:
-      'Sistema de validação e integração de informações empresariais, com automação de processos e regras de negócio em ciclos de deploy frequentes.',
-    href: 'https://github.com/camilagoulartsoares',
-    tags: ['Angular', 'JavaScript'],
-  },
-  {
-    title: 'Saxxes',
-    description:
-      'Plataforma white label para antecipação de recebíveis e gestão financeira, com componentes reutilizáveis e integrações REST.',
-    href: 'https://github.com/camilagoulartsoares',
-    tags: ['Angular', 'Tailwind CSS', 'REST'],
-  },
-  {
-    title: 'Gestão de Licitações',
-    description:
-      'Aplicação institucional full stack para a Prefeitura de Itajubá — frontend e backend em produção para gestão de licitações públicas.',
-    href: 'https://github.com/camilagoulartsoares',
-    tags: ['Next.js', 'Node.js', 'PostgreSQL'],
+      'E-commerce com listagem paginada, filtros, carrinho, login, CRUD de produtos e páginas de detalhe/usuário, consumindo a API DummyJSON. Feito com Angular, CSS e TypeScript.',
+    href: 'https://github.com/camilagoulartsoares/inchurch',
+    tags: ['Angular', 'TypeScript', 'CSS', 'JavaScript'],
   },
 ]
 
