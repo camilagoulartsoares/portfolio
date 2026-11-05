@@ -1,8 +1,24 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
+  "plugins": [
+    "react",
+    "typescript",
+    "oxc",
+    "nextjs",
+    "jsx-a11y"
+  ],
+  "ignorePatterns": [
+    ".next/**",
+    "out/**",
+    "coverage/**",
+    "KIT-CLAUDE-PORTFOLIO-CAMILA-V2/**",
+    "referencias-portfolio/**"
+  ],
   "rules": {
     "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+    "react/exhaustive-deps": "warn",
+    "react/jsx-no-target-blank": "error",
+    "jsx-a11y/prefer-tag-over-role": "off",
+    "nextjs/no-img-element": "off"
   }
 }

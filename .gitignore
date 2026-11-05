@@ -22,3 +22,14 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Next.js
+.next
+out
+next-env.d.ts
+*.tsbuildinfo
+coverage
+
+# Material de apoio local (não publicar)
+referencias-portfolio/
+KIT-CLAUDE-PORTFOLIO-CAMILA-V2/
